@@ -1,0 +1,23 @@
+.contacto{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 78%;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+}
+.wpp{
+    color: #25D366;
+    background: white;
+}
+.fb{
+    color: #3b5998;
+    background: white;
+}
+.ig{
+    background: grey;
+    color: white;
+}

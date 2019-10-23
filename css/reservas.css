@@ -1,0 +1,137 @@
+.mid{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+/*Menu entero*/
+.menu_reservas{
+    background: #ffecec;
+    padding:3%;
+    border: 1px solid;
+}
+.mid_reserva{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+/*Izquierda*/
+form{
+    margin-top: 3%;
+    margin-bottom: 20px;
+    display: flex;
+   flex-wrap: wrap;
+    width: 50%;
+    margin-left: 60px;
+}
+label{
+    width: 25%;
+    font-family: 'Amaranth', sans-serif;
+}
+input{
+    margin-top: 3.5%;
+    margin-left: 15px;
+    width: 40%;
+    margin-bottom: 7%;
+}
+.personas{
+    width: 20%;
+    text-align: center;
+}
+.formulario{
+    width: 100%;
+}
+.aviso{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    width: 50%;
+}
+
+.submit2{
+    border: none;
+    font-family: 'Baloo', cursive;
+    font: bold;
+    position: absolute;
+    right: 152px;
+    bottom: 7%;
+    border: 1px medium;
+    width: 10%;
+    padding: 5px 0;
+    margin: 5px auto;
+    border-radius: 10px;
+    background: #efb810;
+}
+
+/*Centrado del formulario*/
+.centrado_1{
+    padding-left: 24px;
+}
+#Reservado{
+    margin-left: 40px;
+}
+.centrado_2{
+    padding-left: 35px;
+}
+#Telefono{
+    margin-left: 52px;
+}
+.centrado_3{
+    padding-left: 10px;
+}
+#Personas{
+    margin-left: 26px;
+}
+
+/*derecha*/
+.calendario{
+    position: absolute;
+    width: 30%;
+    top: 0px;
+    right: 60px;
+}
+@media screen and (max-width: 1100px) and (min-width: 800px){
+    .submit2{
+        right: 140px;
+    }
+    .mid{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 799px) and (min-width: 0){
+
+    /*Menu Entero*/
+    .mid_reserva{
+        position: relative;
+        width: 100%;
+        height: auto;
+        
+    }
+    .centrado_1, .centrado_2, .centrado_3{
+        width: 100%;
+    }
+    form{
+        position: initial;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .calendario{
+        position: initial;
+        margin-bottom: 2%;
+        width: 90%;
+    }
+    .aviso{
+        width: 100%;
+        margin-top: 10px;
+        position: initial;
+        margin-top: 4%;
+    }
+
+    .submit2{
+        position: initial;
+        margin-top: 3%;
+        width: 20%;
+    }
+}  

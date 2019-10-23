@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>REST.UQZ</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/reservas.css">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sonsie+One&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Bitter|Rubik&display=swap" rel="stylesheet">
+        
+        
+        <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="css/calendar.css" />
+    </head>
+    <body>
+        <div class="encabezado">
+            <div class="barra"></div>
+            <div class="marca">
+                <h1>REST.UQZ</h1>
+            </div>
+
+            <div class="barra"></div>
+
+        </div>
+        <div class="menu_nav">
+            <a href="#" class="bt-menu"><i class="fas fa-bars"></i>Menu</a>
+        </div>
+
+        <nav class="menu">
+            <ul class="estilo">
+                <li class="pequeño">
+                    <i class="fas fa-home"></i>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="pequeño">
+                    <i class="fas fa-book-open"></i>
+                    <a href="#">Platos</a>
+                </li>
+                <li>
+                    <i class="far fa-calendar-alt"></i>
+                    <a href="#">Reservas</a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="contacto.html">Contactos</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mid">
+
+            <h2>¡Haz Tu Reserva Ahora!</h2>   
+
+            <div class="menu_reservas">
+
+                <div class="mid_reserva">
+
+                    <form action="camacho_vitor@hotmail.com" method="POST" id="Reserva">
+
+                    <div class="formulario centrado_1">
+                        <label for="Reservado">Resevado a</label>
+                        <input type="text" id="Reservado" placeholder="Nombre y Apellido" required>
+                    </div>
+                    <div class="formulario centrado_2">           
+                        <label for="Telefono">Telefono</label>
+                        <input type="tel" id="Telefono" placeholder="11-XXXX-XXXX" required>
+                    </div>
+                    <div class="formulario">    
+                        <label for="Mail">Correo Electronico</label>
+                        <input type="mail" id="Mail" placeholder="mail@mail" required>
+                    </div>
+                    <div class="formulario centrado_3">
+                        <label for="Personas">N° de Personas</label>
+                        <input type="number" id="Personas" min="1" max="20" class="personas" required>
+                    </div>
+                    
+                    <div id="cal" class="calendario"> 
+                        <div class="header"> 
+                            <span class="left button" id="prev"> &lang; </span> 
+                            <span class="left hook"></span> 
+                            <span class="month-year" id="label"> June 20&0 </span> 
+                            <span class="right hook"></span> 
+                            <span class="right button" id="next"> &rang; </span>
+                        </div> 
+                        <table id="days"> 
+                            <td>sun</td> 
+                            <td>mon</td> 
+                            <td>tue</td> 
+                            <td>wed</td> 
+                            <td>thu</td> 
+                            <td>fri</td> 
+                            <td>sat</td>
+                        </table> 
+                        <div id="cal-frame"> 
+                            <table class="curr"> 
+                                <tbody> 
+                                    <tr><td class="nil"></td><td class="nil"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr> 
+                                    <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td class="today">11</td><td>12</td></tr> 
+                                    <tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr> 
+                                    <tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr> 
+                                    <tr><td>27</td><td>28</td><td>29</td><td>30</td><td class="nil"></td><td class="nil"></td><td class="nil"></td></tr> 
+                                </tbody> 
+                            </table>
+                     
+                        </div> 
+                    </div>
+                    
+                    <span class="aviso">La reservara sera confirmada  cuando halla  llegado el mail y confirme su contenido.</span>
+                    
+                    <input type="submit" class="submit2" value="Enviar">
+                </form>
+
+
+                </div>
+            </div>
+        </div>
+
+        <script src="js/menu.js"></script>
+        <script src="js/calendario.js"></script>
+        <script>
+            var cal = CALENDAR(); 
+ 
+            cal.init();
+        </script>
+
+    </body>
+</html>

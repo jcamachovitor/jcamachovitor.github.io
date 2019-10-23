@@ -1,0 +1,40 @@
+body{
+    background: #ffffb4;
+}
+
+.mensaje{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    border-top: 1px solid;
+    text-align: center;
+}
+.fas{
+    font-size: 150px;
+    
+    color: gray;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.regreso{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    text-align: center;
+    background: black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.aviso{
+    padding-left: 25px;
+    font-family: 'Passion One', cursive;
+    display: flex;
+    align-content: initial;
+    color: grey;
+    font-size: 120px;
+    height: 450px;
+}

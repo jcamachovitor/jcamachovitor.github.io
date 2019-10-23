@@ -1,0 +1,314 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*LOGO*/
+.encabezado{
+    display: flex;
+    padding: 2% 3.8%;
+    background: url("../img/normal.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.marca{
+    border: solid black 1px;
+    text-align: center;
+    width: 40%;
+    background: url("../img/marca.jpg");
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+.barra{
+    height: 5px;
+    width: 35%;
+    border: solid 3px black;
+    background: black;
+    align-content: center;
+    margin: 0 10px;
+}
+/*NAV*/
+.menu_nav{
+    display: none;
+}
+.menu{
+    position: sticky;
+    border-top: 1px solid;
+    top: 0;
+    z-index: 10;
+}
+.estilo{
+    background: linear-gradient(to bottom, rgba(189,189,189,1) 0%, rgba(128,128,128,1) 50%, rgba(189,189,189,1) 100%);
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+}
+.estilo li{
+    font-family: 'Titan One', cursive;
+    font-size: 20px;
+    width: 25%;
+}
+.estilo li a{
+    text-decoration: none;
+    color: black;
+}
+.estilo li a:hover{
+    position: relative;
+    bottom: 3px;
+}
+
+/*MEDIO*/
+
+.mid{
+    background: linear-gradient(to bottom, rgba(189,189,189,1) 0%, rgba(255,255,180,1) 1%, rgba(255,255,180,1) 2%, rgba(255,255,180,1) 99%, rgba(185,147,90,1) 100%);
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 5%;
+    padding-top: 8%;
+}
+.img_prin{
+    background: url("../img/nose.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    width: 100%;
+    height: 300px; 
+    margin-bottom: 100px;
+}
+.medio{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+}
+
+.cuadros{
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.aparte{
+    justify-content: space-around;
+    align-self: center;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.imgx{
+    background: url("../img/plato1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    align-self: center;
+    width: 45%;
+    height: 220px;
+}
+.buy{
+    border: 1px medium;
+    width: 25%;
+    margin: 5px auto;
+    border-radius: 10px;
+    background: #efb810;
+}
+
+/*ULTIMO*/
+.ultimo{
+    background: #b9935a;
+    padding: 2% 6%;
+    padding-bottom: 4%;
+}
+h2{
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+}
+form{
+    font-family: 'Teko', sans-serif;
+}
+.consulta{
+    width: 40%;
+}
+.solo{
+    width: 70%;
+}
+.submit{
+    border: none;
+    background: black;
+    color: white;
+    height: 20px;
+    width: 15%;
+}
+
+
+img{
+    width: 100%;
+}
+    
+.img_con{
+    width: 40%;
+    align-self: center;
+}
+
+.separo{
+    width: 80%;
+}
+.ultimo{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 800px){
+    .encabezado{
+        background: url("../img/mediano.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .unico{
+        margin-left: 150px;
+        margin-right: 150px;
+        margin: 0 auto;
+    }
+    
+
+    .img_prin{
+        width: 90%;
+        height: 300px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img_con{
+        width: 50%;
+    }
+    .mid{
+        padding-left: 0;
+        margin-right: 0;
+    }
+
+    .submit{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 799px) and (min-width: 0){
+    .encabezado{
+        background: url("../img/pequeño.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .unico{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .barra{
+        display: none;
+    }
+    .marca{
+        width: 50%;
+        margin: auto;
+    }/*sadsadsadasdsa*/
+    .menu{
+        position: fixed;
+        left: -100%;
+        top: 156px;
+        width: 80%;
+        border: none;
+    }
+    .estilo{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 250px;
+        background: #bdbdbd;
+    }
+    .estilo li{
+        width: 100%;
+        align-items: center;
+        border-bottom: 1px solid;
+        padding-bottom: 15px;
+    }
+    /*sadsadsadsadsadas*/
+    .menu_nav{
+        border-top: 1px solid;
+        z-index: 10;
+        position: sticky;
+        top: 0;
+        display: block;
+        width: 100%;
+        background: #bdbdbd;
+    }
+    .menu_nav .bt-menu{
+        display: block;
+        padding: 15px 20px;
+        color: black;
+        text-decoration: none;
+        font-family: 'Titan One', cursive;
+        font-size: 25px;
+        box-sizing: border-box;
+    }
+    .menu_nav i{
+        float: right;
+        font-size: 35px;
+    }
+
+
+    .medio{
+        width: 100%;
+        flex-direction: row;
+        flex-direction: column;
+    }
+    .cuadros{
+        width: 100%;
+    }
+    
+    .ultimo{
+        position: relative;
+    }
+    .consulta{
+        width: 50%;
+    }
+    .submit{
+        width: 30%;
+    }
+
+    .solo{
+        width: 100%;
+        height: 100px;
+    }
+
+    .img_con{
+        display: none;
+    }
+
+    .separo{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .mid{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .img_prin{
+        width: 99%;
+        height: 300px;
+        margin-top: 8%;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
