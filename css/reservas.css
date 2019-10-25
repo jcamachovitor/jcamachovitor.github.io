@@ -1,13 +1,15 @@
 .mid{
     padding-top: 5%;
+    padding: 5% auto;
     padding-bottom: 5%;
     background: url("../img/fondo.jpg");
     background-origin: content-box;
+    background-position: initial;
     background-size: contain;
 }
 /*Menu entero*/
 .menu_reservas{
-    background: #ffecec;
+    background: #FFECEC;
     padding:3%;
     border: 1px solid;
 }
@@ -17,6 +19,9 @@
     height: 350px;
 }
 h2{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
 }
 /*Izquierda*/
@@ -95,15 +100,29 @@ input{
     top: 0px;
     right: 60px;
 }
+.abajo{
+    background: whitesmoke;
+}
+.abajo p{
+    color: black;
+}
 @media screen and (max-width: 1100px) and (min-width: 800px){
     .submit2{
         right: 140px;
     }
+    
     .mid{
-        padding-left: 0;
+        padding-right: 0;
+    }
+    h2{
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .menu_reservas{
+        margin: 0 auto;
     }
 }
-
 @media screen and (max-width: 799px) and (min-width: 0){
 
     /*Menu Entero*/
@@ -113,13 +132,25 @@ input{
         height: auto;
         
     }
+    .mid h2{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu_reservas{
+        width: 80%;
+        margin: auto;
+    }
     .centrado_1, .centrado_2, .centrado_3{
         width: 100%;
     }
     form{
         position: initial;
         width: 100%;
-        margin: 0;
+        margin-left: 0;
+    }
+    label{
+        margin-left: 20%;
     }
     
     .calendario{
@@ -140,3 +171,16 @@ input{
         width: 20%;
     }
 }  
+@media screen and (max-width: 600px) and (min-width: 0){
+    label{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 410px) and (min-width: 0){
+    label{
+        margin: 0;
+    }
+    .menu_reservas{
+        width: 100%;
+    }
+}
