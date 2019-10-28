@@ -48,7 +48,7 @@
                 </li>
                 <li>
                     <i class="fas fa-envelope"></i>
-                    <a href="contacto.html">Contactos</a>
+                    <a href="index.html#contacto">Contactos</a>
                 </li>
             </ul>
         </nav>
@@ -56,87 +56,104 @@
         <div class=" mid">
             <div class="img_prin"></div>
 
-            <div class="bxslider">
-                
-                    <div class="medio">
-                            <div class="cuadros">
-                                    <div class="imgx plato1"></div>
-                                    <div class="aparte">
-                                        <div ><p>Papas fritas con milanesa + bebida (Incluye aderezos)</p></div>
-                                        <p class="buy">$$$</p>
-                                    </div>
-                            </div>                    
-        
-                            <div class="cuadros">
-                                <div class="imgx"></div>
-                                <div class="aparte">
-                                    <div ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis, id quidem nam beatae inventore iste similique exercitationem optio magni quibusdam. Optio autem deleniti temporibus tenetur voluptatem in quas minima.</p></div>
-                                    <p class="buy">$$$</p>
-                                </div>
-                            </div>
-                    </div>
+            <h2>Galeria</h2>
 
-                        <div class="medio">
-                                <div class="cuadros">
-                                    <div class="imgx"></div>
-                                    <div class="aparte">
-                                        <div ><p> optio magni quibusdam. Optio autem deleniti temporibus tenetur voluptatem in quas minima.</p></div>
-                                        <p class="buy">$$$</p>
-                                    </div>    
-                                </div>
-            
-                                <div class="cuadros">
-                                    <div class="imgx"></div>
-                                    <div class="aparte">
-                                        <div ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis, id quidem nam beatae inventore iste similique exercitationem optio magni quibusdam. Optio autem deleniti temporibus tenetur voluptatem in quas minima.</p></div>
-                                        <p class="buy">$$$</p>
-                                    </div>
-                                </div>
-                        </div>
+            <div class="galeria">
+                <div class="galeria_img">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="galeria_img">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 
-            </div>
+                <div class="galeria_img">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                </div>
+
+            </div>            
         </div>
 
 
-        <div class="ultimo">
+        <div class="ultimo" id="contacto">
             <div class="separo">
                 <div><h2>¿Tienes Alguna Consulta?</h2></div>
                 <br>
-                <form action="mailto:camacho_vitor@hotmail.com" method="post" id="formConsulta">
-                    <label for="name">Nombre y Apellido:</label>
-                    <input type="text" id="name" class="consulta" placeholder="Tu nombre" required>
-                    <br>
-                    <br>
-                    <label for="mail">Correo Electronico:</label>
-                    <input type="mail" id="mail" class="consulta" placeholder="mail@mail" required>
-                    <br>
-                    <br>
-                    <textarea name="" id="" cols="30" rows="10" class="solo" placeholder="Escriba lo que quiera preguntar" required></textarea>
-                    <br>
-                    <br>
-                    <input type="submit" class="submit" value="Enviar">
-                </form>
-            </div>
-            <div class="img_con">
-                <img src="img/call.png" alt="">
-            </div>
+                
+                <div class="datos_completo">
+                        <div class="datos_rest">
+                            <div class="datos_info">
+                                <p>Eliot ya es un clásico restaurante de la zona de Villa Urquiza. El restaurante fue diseñado teniendo en cuenta la historia que hemos creado, un salón amplio, combinado una barra de tragos, una bodega y un salón especial de juegos para los más chicos </p>
+                            </div>
+                            <div class="datos_largo">
+                                <h3>Estamos en</h3>
+                                <p>Av. Álvarez Thomas 2855.</p>
+                                <p>Villa Urquiza, Buenos Aires.</p>
+                            </div>
+                            <div class="datos_pequeño">
+                                <h3>Telefono</h3>
+                                <p>01134534334</p>
+                                <p>45567675443</p>
+                                <a href="#">LLAMANOS AHORA</a>
+                            </div>
+                            <div class="datos_largo">
+                                <h3 class="datos_largo">Mail</h3>
+                                <p>info@rest.uqz.com.ar</p>
+                                <a href="#">ENVIANOS UN MENSAJE</a>
+                            </div>
+                            <div class="datos_pequeño datos_giro">
+                                <h3>Siguenos en</h3>
+                                <a href="#" class="fondo_i i_fb"><i class="fab fa-facebook-f fb"></i></a>
+                                <a href="#" class="fondo_i"><i class="fab fa-instagram ig"></i></a>
+                            </div>
+                        </div>
+        
+                        <div class="datos_consulta">
+                                <form action="mailto:camacho_vitor@hotmail.com" method="post" id="formConsulta">
+                                    
+                                    <input type="text" id="name"  placeholder="Nombre" required>
+                                    <input type="text" id="apellido" placeholder="Apellido" required> 
+                                    <input type="mail" id="mail"  placeholder="Email" required>
+                                    <input type="text" id="telefono" placeholder="Telefono" required>           
+                                    
+                                    <textarea name="" id="mensaje" class="solo" placeholder="Mensaje" required></textarea>
+                                
+                                        
+                                    <input type="submit" class="submit" value="Enviar">
+                                </form>
+                               
+                        </div>
+                </div>
 
+            </div>
+        </div>
+        <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2100404502576!2d-58.48249688518233!3d-34.57355153046733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6667e4ab681%3A0x702a19b3bd6a8a36!2sAv.%20%C3%81lvarez%20Thomas%202855%2C%20C1431%20CABA!5e0!3m2!1ses-419!2sar!4v1571792544925!5m2!1ses-419!2sar" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
         <div class="abajo">
-                <div class="espacio">
+                <div class="copy">
                     <p>&copy; 2019 REST.UQZ</p>
                 </div>
-                <div>
-                    <p class="p_titulo">Puedes llamarmos</p>
-                    <p><i class="fab fa-whatsapp wpp"></i>+5491154368765</p>
-                    <p><i class="fas fa-phone-square-alt tel"></i>45859652</p>
+                <div class="cosas">
+                        <a href="#">Preguntas Frecuentes</a>
+                        <a href="#">Condiciones</a>
+                        <a href="#">Privacidad</a>
+                        <a href="#">Acerca de nosotros</a>
+                    
                 </div>
                 <div class="redes">
-                    <p class="p_titulo">Seguínos en</p>
-                    <p><i class="fab fa-twitter tw"></i>@REST.UQZ</p>
-                    <p><i class="fab fa-facebook-square fb"></i>REST.UQZ</p>
-                    <p><i class="fab fa-instagram ig"></i>REST.UQZ</p>
-                    
+                    <a href="#"><i class="fab fa-twitter tw"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square fb"></i></a>
+                    <a href="#"><i class="fab fa-instagram ig"></i></a>
                     
                 </div>  
             </div>

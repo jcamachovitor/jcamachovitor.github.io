@@ -59,15 +59,7 @@ body{
     color: black;
 }
 
-/*MEDIO*/
-
-.mid{
-    background:linear-gradient(to bottom, rgba(189,189,189,1) 0%, rgba(255,255,180,1) 1%, rgba(255,255,180,1) 2%, rgba(255,255,180,1) 99%, rgba(185,147,90,1) 100%);
-    padding-left: 12%;
-    padding-right: 12%;
-    padding-bottom: 5%;
-    padding-top: 8%;
-}
+/*imagen central*/
 .img_prin{
     background: url("../img/nose.gif");
     background-position: center;
@@ -78,137 +70,187 @@ body{
     height: 300px; 
     margin-bottom: 100px;
 }
-.medio{
+/*MID*/
+.mid{
+    background:linear-gradient(to bottom, rgba(189,189,189,1) 0%, rgba(255,255,180,1) 1%, rgba(255,255,180,1) 2%, rgba(255,255,180,1) 99%, rgba(185,147,90,1) 100%);
+    padding: 5% 6%;
+}
+.mid h2{
     text-align: center;
+}
+.galeria{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+}
+.galeria_img{
+    display: flex;
     justify-content: space-between;
-    font-family: 'Bitter', serif;
-    font-size: 20px;
+    width: 100%;
+    margin-bottom: 2%;
 }
-
-.cuadros{
-    width: 49%;
+.galeria_img div{
+    width: 23%;
+    height: 150px;
+    background: grey;
+}
+/*COMPLETO*/
+.datos_completo{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
 }
 
-.aparte{
-    justify-content: space-around;
-    align-self: center;
-    width: 50%;
-    margin-left: 10px;
-}
-
-.imgx{
-    background: url("../img/plato1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    align-self: center;
-    width: 45%;
-    height: 220px;
-}
-.buy{
-    border: 1px medium;
-    width: 25%;
-    margin: 5px auto;
-    border-radius: 10px;
-    background: #efb810;
-}
-
-/*ULTIMO*/
+/*ANTE-ULTIMO*/
 .ultimo{
     background: #b9935a;
-    padding: 2% 6%;
+    padding: 4% 6%;
     padding-bottom: 4%;
 }
 h2{
     font-family: 'Bitter', serif;
     font-size: 30px;
 }
-form{
-    font-family: 'Teko', sans-serif;
+/* CONSULTA RESTAURANTE*/
+.datos_rest{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
 }
-.consulta{
+.datos_rest input{
+    width: 45%;
+}
+.datos_largo{
+    width: 60%;
+}
+.datos_pequeño{
     width: 40%;
 }
-.solo{
-    width: 70%;
+/*AREGLO DE DATOS*/
+.datos_rest a{
+    text-decoration: none;
+    color: #efb810;
 }
-.submit{
-    border: none;
-    background: black;
-    color: white;
-    height: 20px;
-    width: 15%;
+@keyframes dato_a{
+	0%{color: #efb810;}
+	100%{color: black;}
+}
+.datos_rest a:hover{
+    animation-name: dato_a;
+    animation-duration: 1.5s;
 }
 
-
-img{
+.fondo_i{
+    padding: 13px;
+    background: #222222;
     width: 100%;
 }
-    
-.img_con{
-    width: 40%;
-    align-self: center;
+.datos_rest i{
+    font-size: 14px;
+    color: white;
+}
+.datos_rest .i_fb{
+    padding: 12px 14px;
+    margin-right: 10px;
 }
 
-.separo{
-    width: 80%;
+.datos_giro h3{
+    margin-bottom: 28px;
 }
-.ultimo{
+@keyframes datos_i{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(720deg);}
+}
+.datos_giro a:hover i{
+    animation-name: datos_i;
+    animation-duration: 0.5s;
+}
+.datos_giro a:hover{
+    background: #efb810;
+}
+
+
+
+/*CONSULTA*/
+.datos_consulta{
+    width: 50%;
+}
+form{
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
+#name,#apellido,#mail,#telefono{
+    width: 40%;
+}
+.datos_consulta input{
+    padding: 15px;
+    margin-bottom:30px;
+}
 
+textarea{
+    padding: 15px;
+    resize: none;
+    margin-right: 0;
+    width: 100%;
+    height: 100px;
+    margin-bottom:30px;
+}
+.submit{
+    background: black;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+.submit:hover{
+    background: #efb810;
+}
+/*ULTIMO*/
 .abajo{
     display: flex;
     padding: 5px 0;
     width: 100%;
     background: #222222;
-    border-top: 1px solid white;
+    padding: 20px 0;
+    border-top: 1px solid #a5a5a5;
 }
-.abajo p{
-    color: white;
+
+.abajo p,.abajo a{
+    color: #a5a5a5;
     padding: 0 20px;
     font-size: 15px;
     margin: 1px;
+    text-decoration: none;
+}
+.copy{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 15%;
+}
+.cosas{
+    width: 65%;
 }
 .redes{
     display: flex;
-    flex-direction: column;
-    border-left: 1px solid;
-}
-.p_titulo{
-    margin-bottom: 5px;
-}
-.espacio{
-    border-right: 1px solid;
-    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: right;
     align-items: center;
+    width: 20%;
 }
-.tw{
-    color:  #00acee;
+/*retoques de abajo*/
+.redes a{
+    margin-right: 20px;
 }
-.wpp{
-    background: #25D366;
-    color: white;
+.tw, .fb, .ig{
+    font-size: 20px;
+    color:  #a5a5a5;
 }
-.fb{
-    color: #3b5998;
-    background: white;
-}
-.ig{
-    color: white;
-}
-
-.abajo i{
-    height: 85%;
-    width: 10%;
-    margin-right: 10px;
+.redes i:hover{
+    color: grey;
 }
 
 @media screen and (max-width: 1100px) and (min-width: 800px){
@@ -217,31 +259,27 @@ img{
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .unico{
-        margin-left: 150px;
-        margin-right: 150px;
-        margin: 0 auto;
-    }
-    
 
     .img_prin{
-        width: 90%;
+        width: 100%;
         height: 300px;
         margin-bottom: 100px;
-        margin-left: auto;
-        margin-right: auto;
+
     }
-    .img_con{
-        width: 50%;
+    /*DATOS COMPLETO*/
+    .datos_completo{
+        flex-direction: column;
     }
-    .mid{
-        padding-left: 0;
-        margin-right: 0;
+    /*INFO DATOS*/
+    .datos_rest{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    /*CONSULTA DATOS*/
+    .datos_consulta{
+        width: 100%;
     }
 
-    .submit{
-        width: 20%;
-    }
 }
 
 @media screen and (max-width: 799px) and (min-width: 0){
@@ -311,33 +349,6 @@ img{
         flex-direction: row;
         flex-direction: column;
     }
-    .cuadros{
-        width: 100%;
-    }
-    
-    .ultimo{
-        position: relative;
-    }
-    .consulta{
-        width: 50%;
-    }
-    .submit{
-        width: 30%;
-    }
-
-    .solo{
-        width: 100%;
-        height: 100px;
-    }
-
-    .img_con{
-        display: none;
-    }
-
-    .separo{
-        padding: 0;
-        margin: 0 auto;
-    }
 
     .mid{
         padding-left: 0;
@@ -352,5 +363,18 @@ img{
         margin-left: auto;
         margin-right: auto;
 
+    }
+
+     /*DATOS COMPLETO*/
+     .datos_completo{
+        flex-direction: column;
+    }
+    /*INFO DATOS*/
+    .datos_rest{
+        width: 100%;
+    }
+    /*CONSULTA DATOS*/
+    .datos_consulta{
+        width: 100%;
     }
 }
